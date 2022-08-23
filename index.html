@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map App</title>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script defer src="/script.js"></script>
+    <script defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBecTBKir2elTuU5rcDQumd58ntgnnybAY&callback=initMap&v=weekly"
+    ></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <h1>Map Quiz</h1>
+      <h2 >Please double click on the map the location of: </h2>
+    </header>
+    <div id="map" class="column-wide"></div>
+    <main >
+      <section class="questions"> 
+        <p id="q1">Where is the Library?</p>
+        <p id="a1"></p>
+        <p id="q2" class="hide">Where is the Experimental Theatre?</p>
+        <p id="a2"></p> 
+        <p id="q3" class="hide">Where is Jacaranda Hall?</p>
+        <p id="a3"></p> 
+        <p id="q4" class="hide">Where is the Student Recreation Center?</p>
+        <p id="a4"></p>
+        <p id="q5" class="hide">Where is the Sierra Hall?</p>
+        <p id="a5"></p>
+      </section>
+      <section> 
+        <p id="score"></p>
+      </section>
+    </main>
+  </body>
+</html>
